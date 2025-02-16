@@ -37,7 +37,9 @@ func main() {
 		UsageText: "doizer -i <INPUT.bib> -o <OUTPUT.bib>",
 		Description: `For all entries of the input bibtex file with a missing DOI, queries crossref
 with the title, authors and date for highest scoring reference and picks its
-DOI. Flags any case where title differs.`,
+DOI. Flags any case where title differs.
+Developped at github.com/lvignoli/doizer.
+`,
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:      "input",
