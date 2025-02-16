@@ -9,6 +9,7 @@ import (
 	"strings"
 
 	"github.com/carlmjohnson/requests"
+	"github.com/carlmjohnson/versioninfo"
 	"github.com/charmbracelet/log"
 	"github.com/nickng/bibtex"
 	"github.com/sourcegraph/conc/stream"
@@ -31,6 +32,7 @@ func (e WrongTitleError) Error() string {
 func main() {
 	cmd := cli.Command{
 		Name:      "doizer",
+		Version:   versioninfo.Version,
 		Usage:     "Add missing DOIs to your bibtex files.",
 		UsageText: "doizer -i <INPUT.bib> -o <OUTPUT.bib>",
 		Description: `For all entries of the input bibtex file with a missing DOI, queries crossref
@@ -53,6 +55,7 @@ DOI. Flags any case where title differs.`,
 				Required:  true,
 				TakesFile: true,
 			},
+			cli.VersionFlag,
 		},
 		Action: action,
 	}
