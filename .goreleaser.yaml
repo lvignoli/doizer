@@ -22,6 +22,8 @@ builds:
       - linux
       - windows
       - darwin
+    tags:
+      - netgo
 
 archives:
   - formats: ["tar.gz"]
