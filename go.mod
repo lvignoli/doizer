@@ -4,13 +4,13 @@ go 1.23.5
 
 require (
 	github.com/carlmjohnson/requests v0.24.3
+	github.com/carlmjohnson/versioninfo v0.22.5
 	github.com/nickng/bibtex v1.4.0
 	github.com/urfave/cli/v3 v3.0.0-beta1
 )
 
 require (
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
-	github.com/carlmjohnson/versioninfo v0.22.5 // indirect
 	github.com/charmbracelet/lipgloss v0.10.0 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
