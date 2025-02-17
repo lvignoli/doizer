@@ -53,3 +53,13 @@ release:
     ---
 
     Released by [GoReleaser](https://github.com/goreleaser/goreleaser).
+
+brews:
+  - commit_author:
+      name: goreleaserbot
+      email: bot@goreleaser.com
+    description: Add missing DOIs to your bibtex files.
+    homepage: https://github.com/lvignoli/doizer
+    repository:
+      owner: lvignoli
+      name: homebrew-tap
